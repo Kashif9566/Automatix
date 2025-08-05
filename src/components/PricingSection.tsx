@@ -32,7 +32,7 @@ const PricingSection = () => {
 
   return (
     <section
-      className="bg-black text-white py-20 px-4 sm:px-6 md:px-16 lg:px-32"
+      className="bg-black text-white py-20 px-6 sm:px-6 md:px-16 lg:px-32"
       id="pricing"
     >
       <div className="text-center mb-16">

@@ -44,7 +44,7 @@ export default function WorksSection() {
 
   return (
     <section
-      className="bg-black text-white py-20 px-4 sm:px-6 md:px-16 lg:px-32"
+      className="bg-black text-white py-20 px-6 sm:px-6 md:px-16 lg:px-32"
       data-aos="fade-up"
       data-aos-delay="200"
       data-aos-duration="1200"

@@ -5,7 +5,7 @@ import { Star } from "lucide-react";
 export default function TestimonialsSection() {
   return (
     <section
-      className="bg-black text-white py-20 px-4 sm:px-6 md:px-20"
+      className="bg-black text-white py-20 px-6 sm:px-6 md:px-20"
       data-aos="fade-up"
       data-aos-delay="200"
       data-aos-duration="1200"

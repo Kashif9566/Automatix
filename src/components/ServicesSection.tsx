@@ -95,7 +95,7 @@ const ServicesSection = () => {
 
   return (
     <section
-      className="w-full py-20 bg-black text-white px-4 sm:px-6 md:px-16 relative overflow-hidden"
+      className="w-full py-12 sm:py-20 bg-black text-white px-6 sm:px-6 md:px-16 relative overflow-hidden"
       id="services"
       data-aos="fade-up"
       data-aos-delay="200"
@@ -120,7 +120,7 @@ const ServicesSection = () => {
         </p>
       </motion.div>
 
-      <div className="absolute inset-0 opacity-5 scale-110 z-0 pointer-events-none">
+      <div className="absolute inset-0 opacity-5 z-0 pointer-events-none">
         <img
           src="https://framerusercontent.com/images/EaQHg2lXGfJYdlkVzsdOTUA4AIk.png"
           alt="grid background"
@@ -132,7 +132,7 @@ const ServicesSection = () => {
         {[1, 2, 3].map((_, idx) => (
           <motion.div
             key={idx}
-            className="relative group h-[480px] sm:h-[500px]"
+            className="relative group"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
@@ -170,7 +170,7 @@ const ServicesSection = () => {
                 </h3>
                 
                 {/* Interactive Widget Container */}
-                <div className="h-48 sm:h-56 relative">
+                <div className="h-48 sm:h-56 relative overflow-hidden">
                   <div 
                     className="w-full h-full rounded-[18px] relative overflow-hidden border border-[rgb(38,38,38)]"
                     style={{ backgroundColor: 'rgba(0, 0, 0, 0)' }}
@@ -238,7 +238,7 @@ const ServicesSection = () => {
 
                             {/* Floating Icons */}
                             <motion.div 
-                              className="absolute -top-2 -right-2 w-6 h-6 rounded-full bg-gradient-to-br from-gray-600 to-gray-800 flex items-center justify-center"
+                              className="absolute -top-1 -right-1 w-6 h-6 rounded-full bg-gradient-to-br from-gray-600 to-gray-800 flex items-center justify-center"
                               animate={{
                                 y: [0, -8, 0],
                                 x: [0, 4, 0],
@@ -268,7 +268,7 @@ const ServicesSection = () => {
                             </motion.div>
                             
                             <motion.div 
-                              className="absolute -bottom-2 -left-2 w-6 h-6 rounded-full bg-gradient-to-br from-gray-600 to-gray-800 flex items-center justify-center"
+                              className="absolute -bottom-1 -left-1 w-6 h-6 rounded-full bg-gradient-to-br from-gray-600 to-gray-800 flex items-center justify-center"
                               animate={{
                                 y: [0, 8, 0],
                                 x: [0, -4, 0],
@@ -299,7 +299,7 @@ const ServicesSection = () => {
 
                             {/* Additional floating elements */}
                             <motion.div 
-                              className="absolute top-1/2 -right-8 w-4 h-4 rounded-full bg-orange-500/20"
+                              className="absolute top-1/2 right-0 w-4 h-4 rounded-full bg-orange-500/20"
                               animate={{
                                 y: [0, -12, 0],
                                 opacity: [0.3, 0.8, 0.3]
@@ -313,7 +313,7 @@ const ServicesSection = () => {
                             />
                             
                             <motion.div 
-                              className="absolute top-1/2 -left-8 w-4 h-4 rounded-full bg-blue-500/20"
+                              className="absolute top-1/2 left-0 w-4 h-4 rounded-full bg-blue-500/20"
                               animate={{
                                 y: [0, 12, 0],
                                 opacity: [0.3, 0.8, 0.3]

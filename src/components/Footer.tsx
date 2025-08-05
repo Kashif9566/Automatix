@@ -6,7 +6,7 @@ import { TextFade } from "./TextFade";
 export default function Footer() {
   return (
     <section
-      className="relative w-full bg-black text-white py-16 px-4 sm:px-6 md:px-10 lg:px-20 overflow-hidden"
+      className="relative w-full bg-black text-white py-16 px-6 sm:px-6 md:px-10 lg:px-20 overflow-hidden"
       data-aos="fade-up"
       data-aos-delay="200"
       data-aos-duration="1200"

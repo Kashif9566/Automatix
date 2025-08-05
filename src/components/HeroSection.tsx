@@ -45,7 +45,7 @@ export default function HeroSection() {
           sm:pt-0 sm:pb-0 
           md:pt-0 md:pb-0 
           lg:pt-0 lg:pb-0
-          min-h-screen"
+          min-h-[20vh] sm:min-h-screen -mt-22"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
@@ -70,10 +70,10 @@ export default function HeroSection() {
         </div>
 
         <div
-          className="relative z-10 text-center max-w-2xl sm:max-w-4xl w-full mx-auto flex flex-col items-center justify-center min-h-screen"
+          className="relative z-10 text-center max-w-2xl sm:max-w-4xl w-full mx-auto flex flex-col items-center justify-start sm:justify-center min-h-[60vh] sm:min-h-screen pt-50 sm:pt-0 md:pt-70"
         >
           <motion.div
-            className="inline-flex items-center px-4 py-1.5 mb-6 rounded-full bg-[#181818] border border-[#212121] text-xs sm:text-sm text-[#AFAFAF] shadow-md"
+            className="inline-flex items-center pt px-4 py-1.5 mb-6 rounded-full bg-[#181818] border border-[#212121] text-xs sm:text-sm text-[#AFAFAF] shadow-md"
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.5, delay: ANIMATION_DELAYS.HERO_BADGE }}
@@ -120,7 +120,7 @@ export default function HeroSection() {
           >
             <a
               href={ANCHOR_LINKS.WHY_US}
-              className="inline-flex text-sm xs:text-base sm:text-lg items-center justify-center px-5 sm:px-6 py-3 mt-8 bg-gradient-to-b from-[#212121] to-[#050505] border border-[#212121] rounded-lg text-[#DEDEDE] transition hover:scale-105 shadow-lg"
+              className="inline-flex text-sm xs:text-base sm:text-lg items-center justify-center px-5 sm:px-6 py-3 mt-6 bg-gradient-to-b from-[#212121] to-[#050505] border border-[#212121] rounded-lg text-[#DEDEDE] transition hover:scale-105 shadow-lg"
               aria-label="Learn more about our services"
             >
               Learn More
@@ -140,9 +140,9 @@ export default function HeroSection() {
         </div>
       </EnhancedSection>
 
-      <section className="relative z-20 w-full bg-black/5 pt-10 pb-6 sm:py-16" aria-label="Trusted by companies">
-        <div className="font-inter text-[12px] leading-normal tracking-normal max-w-7xl mx-auto px-4 sm:px-6 text-center">
-          <p className="text-sm text-gray-400 mb-6 sm:mb-8">
+      <section className="relative z-20 w-full bg-black/5 pt-6 pb-0 sm:py-16 overflow-hidden" aria-label="Trusted by companies">
+        <div className="font-inter text-[12px] leading-normal tracking-normal max-w-7xl mx-auto px-6 sm:px-6 text-center">
+          <p className="text-sm text-gray-400 mb-4 sm:mb-8">
             Our services are featured on
           </p>
           <div className="relative w-full overflow-hidden">
@@ -155,7 +155,7 @@ export default function HeroSection() {
                   "linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%)",
               }}
             >
-              <div className="flex items-center animate-scroll-x gap-8 sm:gap-12">
+              <div className="flex items-center animate-scroll-x gap-8 sm:gap-12 w-max">
                 {[...PARTNER_LOGOS, ...PARTNER_LOGOS].map((logo, idx) => (
                   <Image
                     key={idx}

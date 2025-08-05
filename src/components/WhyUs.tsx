@@ -127,7 +127,7 @@ export default function WhyUs() {
         sm:pt-16
         pb-10 
         sm:pb-20 
-        px-4 
+        px-6 
         sm:px-6 
         md:px-16 
         lg:px-24

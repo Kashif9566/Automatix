@@ -6,7 +6,7 @@ import { TextFade } from "../../components/TextFade";
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen px-4 py-24 bg-black text-white" data-aos="fade-up">
+    <div className="min-h-screen px-6 py-24 bg-black text-white" data-aos="fade-up">
       <div className="max-w-4xl mx-auto text-center space-y-6 pt-10">
         {/* Pill */}
         <TextFade direction="up">
