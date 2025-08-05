@@ -61,22 +61,22 @@ const termsData = [
 
 const Terms = () => {
   return (
-    <div className="min-h-screen w-full bg-black text-white px-6 md:px-20 py-20 font-inter" data-aos="fade-up">
+    <div className="min-h-screen w-full bg-black text-white px-4 sm:px-6 md:px-20 py-12 sm:py-16 md:py-20 font-inter mt-16 sm:mt-20 md:mt-24" data-aos="fade-up">
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         className="max-w-5xl mx-auto"
       >
-        <h1 className="text-[72px] leading-[1.2] font-medium font-hero mb-8 text-7xl md:text-7xl  text-center text-white">
+        <h1 className="text-4xl sm:text-5xl md:text-[72px] leading-[1.2] font-medium font-hero mb-6 sm:mb-8 text-center text-white">
           Term & Conditions
         </h1>
-        <p className="text-[18px] leading-[1.6]  text-center text-lg text-gray-400 mb-12 pb-5">
-          Welcome to Automatix! These terms and conditions outline the rules <br />
+        <p className="text-base sm:text-lg md:text-[18px] leading-[1.6] text-center text-gray-400 mb-8 sm:mb-10 md:mb-12 pb-3 sm:pb-4 md:pb-5 px-2">
+          Welcome to Automatix! These terms and conditions outline the rules <br className="hidden sm:block" />
           and regulations for the use of our website and services.
         </p>
 
-        <div className="space-y-10">
+        <div className="space-y-6 sm:space-y-8 md:space-y-10">
           {termsData.map((item, index) => (
             <motion.div
               key={index}
@@ -84,21 +84,21 @@ const Terms = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.05 }}
-              className="bg-black p-6 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 border border-black"
+              className="bg-black p-4 sm:p-5 md:p-6 rounded-2xl shadow-md hover:shadow-lg transition-all duration-300 border border-black"
             >
-              <h2 className="text-[24px] leading-[1.3] text-xl  font-semibold text-white mb-2">
+              <h2 className="text-lg sm:text-xl md:text-[24px] leading-[1.3] font-semibold text-white mb-2 sm:mb-3">
                 {item.title}
               </h2>
-              <p className="text-[18px] leading-[1.6] text-gray-400 text-lg whitespace-pre-line">
+              <p className="text-sm sm:text-base md:text-[18px] leading-[1.6] text-gray-400 whitespace-pre-line">
                 {item.description}
               </p>
             </motion.div>
           ))}
         </div>
 
-        <div className="mt-9 text-[18px] leading-[1.6] text-lg text-white border-t border-black ">
+        <div className="mt-6 sm:mt-8 md:mt-9 text-sm sm:text-base md:text-[18px] leading-[1.6] text-white border-t border-black pt-4 sm:pt-6 text-center px-2">
           By using Automatix services, you acknowledge that you have read,
-          understood, and agree to be bound by<br/> these Terms and Conditions.
+          understood, and agree to be bound by<br className="hidden sm:block"/> these Terms and Conditions.
         </div>
       </motion.div>
     </div>

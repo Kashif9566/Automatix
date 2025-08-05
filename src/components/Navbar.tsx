@@ -182,53 +182,57 @@ const Navbar = () => {
               }}
             ></div>
 
-            <div className="space-y-4 mb-8 text-center px-[46px]">
+            <div className="space-y-2 sm:space-y-4 mb-6 sm:mb-8 text-center px-[30px]">
               <div className="text-white">
-                <a href={ANCHOR_LINKS.WHY_US} className="block hover:text-orange-400 transition py-2 text-base font-medium" onClick={handleMenuClose}>Why Us</a>
+                <a href={ANCHOR_LINKS.WHY_US} className="block hover:text-orange-400 transition py-1 sm:py-2 text-sm sm:text-base font-medium" onClick={handleMenuClose}>Why Us</a>
               </div>
               <div className="text-white">
-                <a href={ANCHOR_LINKS.MISSION} className="block hover:text-orange-400 transition py-2 text-base font-medium" onClick={handleMenuClose}>Mission</a>
+                <a href={ANCHOR_LINKS.MISSION} className="block hover:text-orange-400 transition py-1 sm:py-2 text-sm sm:text-base font-medium" onClick={handleMenuClose}>Mission</a>
               </div>
               <div className="text-white">
-                <a href={ANCHOR_LINKS.WORKS} className="block hover:text-orange-400 transition py-2 text-base font-medium" onClick={handleMenuClose}>Works</a>
+                <a href={ANCHOR_LINKS.WORKS} className="block hover:text-orange-400 transition py-1 sm:py-2 text-sm sm:text-base font-medium" onClick={handleMenuClose}>Works</a>
               </div>
               <div className="text-white">
-                <a href={ANCHOR_LINKS.SERVICES} className="block hover:text-orange-400 transition py-2 text-base font-medium" onClick={handleMenuClose}>Services</a>
+                <a href={ANCHOR_LINKS.SERVICES} className="block hover:text-orange-400 transition py-1 sm:py-2 text-sm sm:text-base font-medium" onClick={handleMenuClose}>Services</a>
               </div>
               <div className="text-white">
-                <Link href={NAVIGATION_LINKS.CONTACT} className="block hover:text-orange-400 transition py-2 text-base font-medium" onClick={handleMenuClose}>Contact</Link>
+                <Link href={NAVIGATION_LINKS.CONTACT} className="block hover:text-orange-400 transition py-1 sm:py-2 text-sm sm:text-base font-medium" onClick={handleMenuClose}>Contact</Link>
               </div>
               <div className="text-white">
-                <Link href={NAVIGATION_LINKS.TERMS} className="block hover:text-orange-400 transition py-2 text-base font-medium" onClick={handleMenuClose}>Term & Conditions</Link>
+                <Link href={NAVIGATION_LINKS.TERMS} className="block hover:text-orange-400 transition py-1 sm:py-2 text-sm sm:text-base font-medium" onClick={handleMenuClose}>Term & Conditions</Link>
               </div>
               <div className="text-white">
-                <Link href={NAVIGATION_LINKS.NOT_FOUND} className="block hover:text-orange-400 transition py-2 text-base font-medium" onClick={handleMenuClose}>404</Link>
+                <Link href={NAVIGATION_LINKS.NOT_FOUND} className="block hover:text-orange-400 transition py-1 sm:py-2 text-sm sm:text-base font-medium" onClick={handleMenuClose}>404</Link>
               </div>
             </div>
 
-            <div className="px-[46px] pb-6">
+            <div className="px-[30px] pb-6">
               <Link
                 href={NAVIGATION_LINKS.CONTACT}
                 onClick={handleMenuClose}
-                className="block w-full relative overflow-hidden rounded-lg bg-[#202020] border border-[#2a2a2a] hover:border-orange-400 transition-all duration-300"
+                className="block w-full relative overflow-hidden rounded-[7px] bg-[#202020] transition-all duration-300"
               >
+                {/* Stroke layer */}
                 <div 
-                  className="absolute inset-0 rounded-lg opacity-100"
+                  className="absolute inset-0 rounded-[7px] opacity-100"
                   style={{
-                    background: 'radial-gradient(20.7% 50% at 100% 100%, rgb(158, 100, 46) 0%, rgba(255, 255, 255, 0) 100%)'
+                    background: 'radial-gradient(20.31% 49.33% at 91.125% 99.39%, rgb(158, 100, 46) 0%, rgba(255, 255, 255, 0) 100%)'
                   }}
                 ></div>
                 
+                {/* Glow layer */}
                 <div 
-                  className="absolute inset-0 rounded-lg blur-xl opacity-100"
+                  className="absolute inset-0 rounded-[7px] blur-[15px] opacity-100"
                   style={{
-                    background: 'radial-gradient(25% 50% at 100% 100%, rgb(158, 100, 46) 0%, rgba(255, 255, 255, 0) 100%)'
+                    background: 'radial-gradient(25% 48.53% at 91.125% 99.39%, rgb(158, 100, 46) 0%, rgba(255, 255, 255, 0) 100%)'
                   }}
                 ></div>
                 
-                <div className="absolute inset-0 bg-[#0d0d0d] rounded-lg opacity-100"></div>
+                {/* Fill layer */}
+                <div className="absolute inset-0 bg-[#0d0d0d] rounded-[7px] opacity-100"></div>
                 
-                <div className="relative z-10 flex items-center justify-center gap-2 px-6 py-3 text-white font-medium">
+                {/* Content */}
+                <div className="relative z-10 flex items-center justify-center gap-2 px-6 py-3 text-[#dedede] font-medium">
                   <span>Let's Talk</span>
                   <div className="flex items-center">
                     <ArrowUpRight size={20} className="transition-transform duration-300 group-hover:-rotate-45" />
