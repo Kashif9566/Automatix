@@ -70,7 +70,7 @@ const Navbar = () => {
       role="navigation"
       aria-label="Main navigation"
     >
-      <div className="w-full max-w-5xl px-6 pt-4 relative z-10">
+      <div className="w-full max-w-4xl px-6 pt-4 relative z-10">
         <div 
           className={`flex flex-col backdrop-blur-lg text-white border border-[#2a2a2a] shadow-lg overflow-visible transition-all duration-500 ease-in-out ${
             menuOpen ? 'rounded-[23px] min-h-[400px]' : 'rounded-[40px]'

@@ -60,8 +60,14 @@ export default function HeroSection() {
                   style={{
                     backdropFilter: 'blur(58px)',
                     backgroundColor: 'transparent',
-                    backgroundImage: 'radial-gradient(rgba(232, 120, 17, 0.2) 1px, transparent 1px)',
-                    backgroundSize: '9px 9px'
+                    backgroundImage: `
+                      radial-gradient(circle at 20% 50%, rgba(0, 0, 0, 0.8) 0%, transparent 50%),
+                      radial-gradient(circle at 80% 30%, rgba(0, 0, 0, 0.6) 0%, transparent 40%),
+                      radial-gradient(circle at 10% 80%, rgba(0, 0, 0, 0.7) 0%, transparent 45%),
+                      radial-gradient(circle at 90% 70%, rgba(0, 0, 0, 0.5) 0%, transparent 35%),
+                      radial-gradient(rgba(232, 120, 17, 0.2) 1px, transparent 1px)
+                    `,
+                    backgroundSize: '100% 100%, 100% 100%, 100% 100%, 100% 100%, 9px 9px'
                   }}
                 />
               </div>
